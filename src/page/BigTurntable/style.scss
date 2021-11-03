@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+
+.bigTurn {
+  height: 100%;
+  overflow: auto;
+}
+.bigTurn-table {
+  position: relative;
+  background: url('./img/bg.png') #ffcf99 no-repeat top left;
+  background-size: 100% auto;
+  padding-bottom: 25px;
+  .my-rewards {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    top: 6px;
+    left: 10px;
+    border-radius: 11.25px 0 0 11.25px;
+    img {
+      width: 28px;
+      height: 28px;
+      vertical-align: middle;
+      z-index: 1;
+    }
+    span {
+      margin-left: -11px;
+      display: inline-block;
+      align-self: flex-end;
+      width: 97px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 0 12px 12px 0;
+      background: rgba($color: #001745, $alpha: 0.3);
+      font-size: 12px;
+      font-family: Roboto-Medium;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  }
+  .subject {
+    text-align: center;
+    img {
+      width: 332px;
+      height: 220px;
+    }
+    z-index: 2;
+    position: relative;
+  }
+  .rule {
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    color: #ffffff;
+    top: 10px;
+    width: auto;
+    height: 24px;
+    padding: 0 6px 0 9px;
+    line-height: 24px;
+    background: rgba($color: #001745, $alpha: 0.3);
+    border-radius: 12px 0px 0px 12px;
+    font-family: Roboto-Medium;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .chance {
+    display: inline-block;
+    width: 200px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    font-family: Roboto-Medium;
+    font-weight: 500;
+    color: #ffffff;
+    background: url('./img/chance-bg.png') no-repeat left top;
+    background-size: 100%;
+    transform: translateY(6px);
+    span {
+      margin-right: 4px;
+    }
+  }
+  .luck-footer {
+    margin-top: -15px;
+    height: 120px;
+    background: url('./img/luck-footer.png') no-repeat top center;
+    background-size: 100%;
+    position: relative;
+    .tips-warrper {
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .task-wrapper {
+    background: #ffcf99;
+  }
+  .refresh {
+    animation: refresh 1s ease-in-out;
+  }
+}
+
+@keyframes refresh {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

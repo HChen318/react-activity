@@ -1,0 +1,35 @@
+.scroll-tips-box {
+  overflow: hidden;
+  height: 32px;
+  background: #ffcfad;
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: #fffb91;
+  background: url('./img/marquee-bg.png') no-repeat top left;
+  background-size: 100%;
+  width: 334px;
+}
+.scroll-tips-li {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding-left: 6px;
+  justify-content: center;
+}
+.tip-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+.tips {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-family: Roboto-Regular;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
