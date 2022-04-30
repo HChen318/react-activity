@@ -1,9 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  useMemo,
-  useRef,
-} from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import {
   getActivityInfoAPI,
   getLoteryChanceAPI,
@@ -12,6 +7,8 @@ import {
 } from "./request";
 import LuckyGrid from "./components/LuckyGrid";
 import ScrollTips from "./components/ScrollTips";
+
+import ShareModalH5 from "@/components/ShareModalH5";
 
 import "./style.scss";
 
@@ -22,6 +19,7 @@ function BigTurntable() {
   const [loteryChance, setLoteryChance] = useState(0);
   const [rewardList, setRewardList] = useState([]);
   const [currentPrize, setCurrentPrize] = useState(null);
+  const [modalVisible, setModalVisible] = useState(false);
   let LuckyDom = useRef();
   let language = useRef("in");
 
@@ -142,7 +140,7 @@ function BigTurntable() {
   };
 
   const luckEnd = () => {
-    console.log('-===中奖了')
+    console.log("-===中奖了");
     // if (!currentPrize) return;
   };
 
@@ -154,8 +152,8 @@ function BigTurntable() {
             <img src={require("./img/gift.png").default} alt="" />
             <span>我的奖品</span>
           </div>
-          <div className="rule" onClick={() => {}}>
-            规则
+          <div className="rule" onClick={() => setModalVisible(true)}>
+            分享
           </div>
           <div className="subject">
             <img src={require("./img/mascot.png").default} alt="" />
@@ -184,6 +182,10 @@ function BigTurntable() {
           </div>
         </div>
       </div>
+      <ShareModalH5
+        modalVisible={modalVisible}
+        handleCancelCallBack={() => setModalVisible(false)}
+      />
     </>
   );
 }

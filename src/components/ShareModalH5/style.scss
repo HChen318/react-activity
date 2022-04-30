@@ -1,0 +1,226 @@
+.share-modal-H5 {
+  .poster-wrap {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    background-color: #fff;
+    color: #000;
+    z-index: 1000;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+
+    .download {
+      position: fixed;
+      right: 16px;
+      top: 320px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      line-height: 48px;
+      text-align: center;
+      z-index: 1000;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .container {
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-height: 350px;
+      overflow: hidden auto;
+      border-radius: 8px;
+
+      .poster-inner {
+        width: 100%;
+        background: #fff;
+        padding: 0 16px 16px;
+      }
+
+      .logo {
+        width: 100%;
+        padding: 16px 0;
+        background-color: #fff;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 48px;
+        }
+      }
+
+      .inner {
+        width: 100%;
+        height: 100%;
+        background: rgb(15, 92, 202) url("./img/bg@2x.png") no-repeat;
+        background-size: 361px auto;
+        background-position: -20px -95px;
+        background-repeat: no-repeat;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .logo-two {
+          width: 49px;
+          margin-right: 9px;
+          border-radius: 8px;
+        }
+
+        .describe {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .title {
+          font-family: Roboto-Bold;
+          font-size: 18px;
+          color: #ffffff;
+          margin-bottom: 5px;
+        }
+
+        .content {
+          width: 192px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .news-content {
+        margin-top: 16px;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 20px 16px 16px 16px;
+        .content-top {
+          display: flex;
+          align-items: center;
+          .time-block {
+            flex: 1;
+            .date {
+              font-size: 16px;
+              font-family: Roboto-Medium, Roboto;
+              font-weight: 500;
+              color: #333333;
+              line-height: 16px;
+            }
+            .time {
+              margin-top: 8px;
+              font-size: 12px;
+              font-family: Roboto-Regular, Roboto;
+              font-weight: 400;
+              color: #999999;
+              line-height: 12px;
+            }
+          }
+          .tag {
+            text-align: center;
+            padding: 6px 7px;
+            background: #deedff;
+            border-radius: 4px;
+
+            span {
+              color: #2872d6;
+              font-size: 12px;
+              font-weight: 600;
+              line-height: 16px;
+              font-style: italic;
+            }
+          }
+        }
+
+        .content-img {
+          width: 100%;
+          border-radius: 6px;
+          overflow: hidden;
+          margin-top: 12px;
+
+          img {
+            border-radius: 6px;
+            width: 100%;
+          }
+        }
+
+        .text {
+          padding-top: 16px;
+          font-size: 14px;
+          font-family: Roboto-Regular, Roboto;
+          font-weight: 400;
+          color: #333333;
+          line-height: 19px;
+          word-break: break-all;
+
+          .text-title {
+            font-family: Roboto-Medium, Roboto;
+            font-weight: 500;
+            color: #333333;
+            margin-bottom: 8px;
+          }
+
+          img {
+            width: 100%;
+            border-radius: 6px;
+          }
+        }
+      }
+
+      .card-gifts {
+        margin-top: 13px;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .share-container {
+    position: fixed;
+    z-index: -99;
+    width: 328px;
+    height: 328px;
+    padding: 10px 10px 12px;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    border-radius: 5px;
+
+    .share-header {
+      img {
+        width: 308px;
+        height: 236px;
+      }
+    }
+    .share-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+      .icon {
+        width: 108px;
+        height: 32px;
+      }
+      .qrcode {
+        width: 58px;
+        height: 58px;
+
+        > svg {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}
